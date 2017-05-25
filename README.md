@@ -1,6 +1,8 @@
 # Seq2Seq-TensorFlow
 This file contains the Seq2Seq model implemented by Tensorflow.
+
 The code is very simple to understand Seq2seq. The model learns a pair of sentences (Hello World -> How are you).
+
 If you want to learn more sentence pairs, adjust 'input_string', 'target_string' variables.
 
 The code was tested in the '1.0.0-rc0' version.
@@ -23,6 +25,7 @@ input_data = (map(ord, input_string) + PAD * input_PAD_size) * batch_size # Chan
 target_data = (GO + map(ord, target_string) + PAD * target_PAD_size) * batch_size # Change target phrase to list of ASCII codes.
 target_weights= ([1.0]*12 + [0.0]*0) * batch_size  # The number of actual valid (loss counted) number of characters 
                                                     # excluding PAD in the target sentence.
+
 
 ## Set up the architecture
 class Seq2Seq(object):
