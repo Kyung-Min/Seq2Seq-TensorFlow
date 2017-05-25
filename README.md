@@ -7,7 +7,7 @@ If you want to learn more sentence pairs, adjust 'input_string', 'target_string'
 
 The code was tested in the '1.0.0-rc0' version.
 
-Note: The original work is https://gist.github.com/pannous/b3f8ab944a85b33e694de21c6ded029e and I slightly revise some errors in the code.
+Note: The original work is https://gist.github.com/pannous/b3f8ab944a85b33e694de21c6ded029e and I revise some errors in the code.
 
 ## Data and parameter setting
 ```python
