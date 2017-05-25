@@ -83,7 +83,7 @@ class Seq2Seq(object):
                 self.updates.append(tf.train.AdamOptimizer(learning_rate).minimize(self.losses[0]))
 
         def step(self, session, encoder_inputs, decoder_inputs, target_weights, test):
-                bucket_id=0 # 학습 또는 추론할 bukcet 선택
+                bucket_id=0 # Choosing bukcet to use
                 encoder_size, decoder_size = self.buckets[bucket_id]
 
                 # Input feed: encoder inputs, decoder inputs, target_weights 
